@@ -19,11 +19,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div id="search-container">
-            <input type="text" id="search-box" placeholder="Search for a book">
-            <button id="search-btn">Search</button>
-          </div>
-      </nav>
+       
 
       <!-- Content sections -->
 <section id="home">
@@ -36,20 +32,28 @@
   
   
   <section id="reviews">
-      <!--review point-->
-      <div id="book-container"></div>
-      <div id="reviews-container"></div>
-      <div id="add-review-container">
-        <h2>Add a Review</h2>
-        <input type="text" id="review-name" placeholder="Your Name">
-        <textarea id="review-text" placeholder="Your Review"></textarea>
-        <button id="add-review-btn">Add Review</button>
-      </div>
+    <div id="review-container">
+      <h2>Place A Book Review</h2>
+      <form id="review-form">
+        <label for="book-title">Book Title</label>
+        <input type="text" id="book-title" required>
+        <label for="book-author">Book Author</label>
+        <input type="text" id="book-author" required>
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" required>
+        <label for="review">Your Review:</label>
+        <textarea id="review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
   </section>
   
   <section id="about">
     <h2>About</h2>
-    <p>Find out more about our book review web application.</p>
+    <p>
+        We at Bookie are excited for you to learn about the books you might be interested in before you even buy it.
+        we provide a review service that is the best of the best.
+    </p>
   </section>
      
     <!--contact-->
@@ -75,6 +79,7 @@
         </ul>
       </section>
       
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
+
 </body>
 </html>

@@ -1,197 +1,143 @@
 /* Global styles */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Sofia', sans-serif;
   
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-  }
-  
-  /* Navbar styles */
-  nav {
-    background-image:linear-gradient(180deg , #BA90C6,#E8A0BF);
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 30px;
-  }
-  .title{
-    font-style: oblique;
-    font-family: "sofia";
-    font-weight: 80;
-    font-size: 40px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-self: right;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  #search-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  #search-box {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
-  }
-  
-  #search-btn {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Content section styles */
-  section {
-    padding: 50px 20px;
-  }
-  
-  #home {
-    background-image: url(https://i.pinimg.com/236x/26/1a/02/261a02557aac4051ffcd091fee0af13a.jpg);
-    
-  }
-  #home h2 ,p{
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    font-family: "sofia" ;
-    font-style: italic;
-   
-  }
-   /* Define the animation */
-@keyframes example {
-    0% { transform: translateX(0px); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0px); }
-  }
-  
-  /* Apply the animation to the text */
- #home h2,p {
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
+}
 
-  
-  #reviews {
-    background-color:#FFACAC ;
-  }
-  
-  #reviews-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .review-card {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .review-card h3 {
-    margin-top: 0;
-  }
-  
-  .review-card p {
-    margin-bottom: 0;
-  }
-  
-  #add-review-container {
-    margin-top: 50px;
-  }
-  
-  #add-review-container h2 {
-    margin-top: 0;
-  }
-  
-  #add-review-container input[type="text"],
-  #add-review-container textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    border: none;
-  }
-  
-  #add-review-container textarea {
-    height: 150px;
-  }
-  
-  #add-review-container button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #add-review-container button:hover {
-    background-color: #555;
-  }
-  
-  /* Contact section styles */
-  #contact {
-    background-color: #f5f5f5;
-    padding: 50px 20px;
-  }
-  
-  #contact ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #contact li {
-    margin-bottom: 10px;
-  }
-  
-  #contact li strong {
-    display: inline-block;
-    width: 100px;
-    font-weight: bold;
-  }
-  
-  #contact li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  #contact li a:hover {
-    text-decoration: underline;
-  }
-  
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f44336;
+}
+
+/* Home section */
+
+#home {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.5rem;
+}
+
+/* Reviews section */
+
+#reviews {
+  background-color: #fff;
+  padding: 50px;
+}
+
+#review-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#review-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#review-form input,
+#review-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#review-form button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#review-form button:hover {
+  background-color: #c62828;
+}
+
+/* About section */
+
+#about {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+#about h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.5rem;
+}
+
+/* Contact section */
+
+#contact {
+  background-color: #fff;
+  padding: 50px;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#contact ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #f44336;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
