@@ -201,4 +201,8 @@ body {
   }
   #about{
     background-color:#FFACAC ;
+
+  }
+  #about h2{
+    color: #333;
   }
