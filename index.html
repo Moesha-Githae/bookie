@@ -19,7 +19,11 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-       
+        <div id="search-container">
+            <input type="text" id="search-box" placeholder="Search for a book">
+            <button id="search-btn">Search</button>
+          </div>
+      </nav>
 
       <!-- Content sections -->
 <section id="home">
@@ -32,28 +36,22 @@
   
   
   <section id="reviews">
-    <div id="review-container">
-      <h2>Place A Book Review</h2>
-      <form id="review-form">
-        <label for="book-title">Book Title</label>
-        <input type="text" id="book-title" required>
-        <label for="book-author">Book Author</label>
-        <input type="text" id="book-author" required>
-        <label for="reviewer-name">Your Name:</label>
-        <input type="text" id="reviewer-name" required>
-        <label for="review">Your Review:</label>
-        <textarea id="review" required></textarea>
-        <button type="submit">Submit Review</button>
-      </form>
-    </div>
+      <!--review point-->
+     
+      <div id="add-review-container">
+        <h2>Add a Review</h2>
+       <input type="text" placeholder="Book-Author" id="Book-Author" required>  
+        <input type="text" id="book-title"  placeholder="Book-Title"
+        required>
+        <input type="text" id="review-name" placeholder="Your Name" required>
+        <textarea id="review-text" placeholder="Your Review" required></textarea>
+        <button id="add-review-btn">Add Review</button>
+      </div>
+      
   </section>
   
   <section id="about">
-    <h2>About</h2>
-    <p>
-        We at Bookie are excited for you to learn about the books you might be interested in before you even buy it.
-        we provide a review service that is the best of the best.
-    </p>
+    <div id="review-container"></div>
   </section>
      
     <!--contact-->
@@ -79,7 +77,6 @@
         </ul>
       </section>
       
-    <script src="./index.js"></script>
-
+    <script src="index.js"></script>
 </body>
 </html>
