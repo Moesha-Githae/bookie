@@ -89,7 +89,7 @@ body {
   
 
   
-  #reviews {
+  #review {
     background-color:#FFACAC ;
   }
   
@@ -198,11 +198,19 @@ body {
     width: 200px;
     background-color: #FFACAC;
     border: black solid 10px;
+    position: relative;
   }
-  #about{
+  #currentReviews{
     background-color:#FFACAC ;
 
   }
-  #about h2{
+  #currentReviews h2{
     color: #333;
+  }
+  #reviewdetails button{
+    background-color: #b652ad;
+    position: absolute;
+    margin: 0px 10px 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
   }
