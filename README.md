@@ -11,3 +11,5 @@ css
 there are no bugs currently
 # demo
 https://moesha-githae.github.io/bookie/
+# LICENSE
+[MIT](https://choosealicense.com/licenses/mit/)
